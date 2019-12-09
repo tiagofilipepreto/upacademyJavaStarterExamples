@@ -1,6 +1,6 @@
 package pt.upacademy.Examples.FizzBuzz;
 
-public class MyAppFizzBuzz extends FizzBuzz {
+public class MyAppFizzBuzz {
 
 	public static void main(String[] args) {
 		System.out.println("MyApp Class");

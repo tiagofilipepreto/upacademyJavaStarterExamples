@@ -9,6 +9,8 @@ public class FizzBuzz {
 	public static void main(String[] args) {
 		System.out.println("FizzBuzz Class");
 		FizzBuzz myFizz = new FizzBuzz();
+		
+		System.out.println(myFizz);
 
 		System.out.println("myFizz.numCicle : " + myFizz.numCicle);
 		System.out.println("myFizz.getNumCicle() : " + myFizz.getNumCicle());
@@ -27,6 +29,8 @@ public class FizzBuzz {
 			System.out.println("Valor entre 1 e 100");
 			if (sc.hasNextInt()) {
 				value = sc.nextInt();
+			} else {
+				sc.nextLine();
 			}
 			if (value > 100 || value < 1) {
 				value = 0;
@@ -51,5 +55,12 @@ public class FizzBuzz {
 		}
 		System.out.println(output);
 	}
+
+	@Override
+	public String toString() {
+		return "My Fizz numCicle=" + numCicle;
+	}
+	
+	
 
 }
