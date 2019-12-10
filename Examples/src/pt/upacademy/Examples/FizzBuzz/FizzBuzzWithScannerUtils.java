@@ -1,13 +1,13 @@
 package pt.upacademy.Examples.FizzBuzz;
 
-import java.util.Scanner;
+import pt.upacademy.Examples.ScannerUtils.ScannerUtils;
 
-public class FizzBuzz {
-	private Scanner sc = new Scanner(System.in);
+public class FizzBuzzWithScannerUtils {
+	private ScannerUtils sc = new ScannerUtils();
 	private int numCicle;
 
 	public static void main(String[] args) {
-		FizzBuzz myFizz = new FizzBuzz();
+		FizzBuzzWithScannerUtils myFizz = new FizzBuzzWithScannerUtils();
 		myFizz.setNumCicle();
 		myFizz.resolve();
 	}
@@ -17,16 +17,7 @@ public class FizzBuzz {
 	}
 
 	public void setNumCicle() {
-		int value = 0;
-		do {
-			System.out.println("Coloque um valor entre 1 e 100");
-			if (sc.hasNextInt()) {
-				value = sc.nextInt();
-			} else {
-				sc.nextLine();
-			}
-		} while (value > 100 || value < 1);
-		this.numCicle = value;
+		this.numCicle = sc.getValidInt("Coloque um valor entre ", 1, 100);
 	}
 
 	public void resolve() {
@@ -44,4 +35,5 @@ public class FizzBuzz {
 		}
 		System.out.println(output);
 	}
+
 }

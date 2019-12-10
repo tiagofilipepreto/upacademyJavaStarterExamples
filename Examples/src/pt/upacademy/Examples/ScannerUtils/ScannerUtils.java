@@ -38,7 +38,7 @@ public class ScannerUtils {
 		int result;
 		boolean valid = false;
 		do {
-			String validString = msg + "( ";
+			String validString = msg + "(";
 			for (int i : values) {
 				validString += " " + i;
 			}
