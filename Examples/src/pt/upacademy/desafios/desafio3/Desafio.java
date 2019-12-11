@@ -2,9 +2,15 @@ package pt.upacademy.desafios.desafio3;
 
 public class Desafio {
 
-	public static int points(String[] strings) {
-		// TODO Auto-generated method stub
-		return 0;
+	public static int points(String[] games) {
+		int result = 0;
+		for (String game : games) {
+			char gM = game.charAt(0), gS = game.charAt(2);
+
+			result += gM > gS ? 3 : gM == gS ? 1 : 0;
+		}
+
+		return result;
 	}
 
 }
