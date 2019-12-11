@@ -14,7 +14,6 @@ public class ArrayListExample {
 		myList.add("Ze Manel");
 		myList.add("Sam");
 		myList.add("Gata");
-
 		System.out.println(myList);
 		myList.remove("Ze Manel");
 		System.out.println(myList);

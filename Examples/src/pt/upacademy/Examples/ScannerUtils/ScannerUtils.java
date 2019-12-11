@@ -1,5 +1,4 @@
 package pt.upacademy.Examples.ScannerUtils;
-
 import java.util.Scanner;
 
 public class ScannerUtils {
